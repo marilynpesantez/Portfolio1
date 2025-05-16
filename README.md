@@ -23,8 +23,8 @@ The companies main database structure as seen below consists of one table broken
 - **cancellations_view:** All records where Quantity is less than zero and InvoiceNo begins with 'C' are assumed to represent cancelled transactions. Cancellation patterns are acknowledged in the analysis but not included in saless_view as they distort Order Volume and Average Order Value metrics.
 - **giveaways_view:** All records where where Quantity is greater than zero, UnitPrice equals 0, CustomerID is not empty, and Item is not empty are assumed to represent items given away to customers for free through special promotions or bundles.
 - **test_misc_view:** All records where UnitPrice equals 0 and CustomerID is empty are assumed to be system tests that do not represent any tangible transactions.
-- **adjustments_view:** All records where where InvoiceNo begins with 'A' and StockCode equals 'B'.
-- **duplicates_view:** All records where each column value is exactly equal to the values in some other row. A Row_Number() function was applied to the original raw view, partitioning over each column. This was done to identify duplicate records (where row_num > 1) and differenciate between the original record (where row_num = 1). These duplicates were labeled and excluded from the sale_view.
+- **adjustments_view:** All records where where StockCode equals 'B' or where Quantity is greater than 0 and Invoice begins with 'C'.
+- **duplicates_view:** All records where each column value is exactly equal to the values in some other row. A Row_Number() function was applied to the original view1, partitioning over each column. This was done to identify duplicate records (where row_num > 1) and differenciate that from original record (where row_num = 1). These duplicates were labeled and excluded from the sales_view.
 
 ![image](https://github.com/user-attachments/assets/118714a4-6836-44be-9bba-ed9fbd1fdf86)
 
