@@ -9,7 +9,7 @@ Insights and recommendations are provided on the following key areas:
 - **Product Perfromance Evaluation:** Given the extensive variety of products sold, this assestment looks into the performance of individual top performing products, assessing sales volume and revenue generation. Insights will be used to suggest potential product optimization strategies or inventory adjustments.
 - **Regional Sales Comparison:** This analysis will examine sales across different countries to identify geographic performance differences. By understanding which regions are performing best and where improvements can be made, the company can tailor marketing efforts and regional strategies more effectively.
 
-The SQL queries used to inspect and clean the data for this analysis can be found here [link].
+The SQL queries used to inspect and clean the data for this analysis can be found here [https://github.com/marilynpesantez/Portfolio1/blob/main/Cleaning.sql].
 
 Targed SQL queries regarding various business questions can be found here [link].
 
