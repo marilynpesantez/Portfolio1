@@ -18,10 +18,10 @@ An interactive Tableau dashboard used to report and explore sales trends can be 
 
 # Data Structure & Initial Checks
 
-The companies main database structure as seen below consists of one table broken out into 4 unique views with a total row count of 1067371 records. A description of each view is as follows:
-- **sale_view:** All records where Quantity is greater than zero, UnitPrice is greater than zero, and StockCode does not equal 'B' are assumed to represent sales transactions.
+The companies main database structure as seen below consists of one table broken used to create 4 unique views with a total row count of 1067371 records. A description of each view is as follows:
+- **sales_view:** All records where Quantity is greater than zero, UnitPrice is greater than zero, StockCode does not equal 'B', and InvoiceNo does not begin with 'C' are assumed to represent paid sales transactions.
+- **cancellation_view:** All records where Quantity is less than zero and InvoiceNo begins with 'C' are assumed to represent cancelled transactions. Cancellation patterns are acknowledged in the analysis but not included in saless_view as they distort Order Volume and Average Order Value metrics.
 - **giveaway_view:** All records where where Quantity is greater than zero, UnitPrice equals 0, CustomerID is not empty, and Item is not empty are assumed to represent items given away to customers for free through special promotions or bundles.
-- **cancellation_view:** All records where Quantity is less than zero and InvoiceNo begins with 'C' are assumed to represent cancelled transactions. Cancellation patterns are acknowledged in the analysis but not included in sales_view as they distort Order Volume and Average Order Value metrics.
 - **test_view:** All records where UnitPrice equals 0 and CustomerID is empty are assumed to be system tests that do not represent any tangible transactions.
 - **bad_debt_adjustment:** All records where where InvoiceNo begins with 'A' and StockCode equals 'B'.
 - **duplicated_rows_view:** All records where each column value is exactly equal to the values in some other row. A Row_Number() function was applied to the original raw view, partitioning over each column. This was done to identify duplicate records (where row_num > 1) and differenciate between the original record (where row_num = 1). These duplicates were labeled and excluded from the sale_view.
