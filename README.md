@@ -26,12 +26,7 @@ The companies main database structure as seen below consists of one table broken
 - **bad_debt_adjustment:** All records where where InvoiceNo begins with 'A' and StockCode equals 'B'.
 - **duplicated_rows_view:** All records where each column value is exactly equal to the values in some other row. A Row_Number() function was applied to the original raw view, partitioning over each column. This was done to identify duplicate records (where row_num > 1) and differenciate between the original record (where row_num = 1). These duplicates were labeled and excluded from the sale_view.
 
-![image](https://github.com/user-attachments/assets/92a847b5-4b3d-4e24-ba9f-6732c0ff1088)
-
-![image](https://github.com/user-attachments/assets/86cbb4a1-4a43-4485-8bc1-de0edc1867a0)
-
-
-
+![image](https://github.com/user-attachments/assets/118714a4-6836-44be-9bba-ed9fbd1fdf86)
 
 # Executive Summary
 
