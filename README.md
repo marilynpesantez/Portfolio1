@@ -11,7 +11,7 @@ Insights and recommendations are provided on the following key areas:
 
 The SQL queries used to inspect and clean the data for this analysis can be found here [https://github.com/marilynpesantez/Portfolio1/blob/main/Cleaning.sql].
 
-Targed SQL queries regarding various business questions can be found here [(https://github.com/marilynpesantez/Portfolio1/blob/main/Queries.sql)].
+Targed SQL queries regarding various business questions can be found here [https://github.com/marilynpesantez/Portfolio1/blob/main/Queries.sql].
 
 An interactive Tableau dashboard used to report and explore sales trends can be found here [link].
 
