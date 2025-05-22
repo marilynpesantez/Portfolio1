@@ -49,6 +49,7 @@ Explain the overarching findings, trends, and themes in 2-3 sentences here. This
   
 * **While average order value peaked in December 2011, there was also a peak in average order value of cancelled transactions.** The peak in cancelled order volume during this same month may correspond with wholesaler customers overanticipating demand for their own respective shops and cancelled their orders through this wholesaler.
 
+![YOY 2010-2011](https://github.com/user-attachments/assets/388e0491-5b0c-4f26-84c9-786ab17133e5)
 
 
 
